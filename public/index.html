@@ -1,0 +1,214 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-div class='col'or" content="#000000" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="assets/css/custom.css" rel="stylesheet" type="text/css">
+
+        <link rel="icon" href="https://drive.google.com/uc?export=view&id=1apocMIA5A4G3A4A5r4D7uuZC1NEiUdXa" />
+        
+        <title>
+            .TAB | Guia de Lavagem
+        </title>
+        <meta property="og:title" content=".TAB | Guia de Lavagem">
+        <meta property="og:description" content="Guia de como cuidar das suas roupas .TAB">
+        <meta property="og:image" content='https://i.ibb.co/1v7B2VZ/11.jpg'>
+        <meta property="og:url" content="https://r0r7ts.deta.dev/">
+
+    </head>
+    <body class="text-center">
+        <header>
+            <img src='https://i.ibb.co/C1MFSLr/logo.png' alt='Logo pontotab' class="h-50" >
+            <div class="row">
+                <div class="col">
+                    <h1> 
+                        GUIA DE LAVAGEM <i>.TAB</i>
+                    </h1>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container" id='content'>
+                <script text="text/javascript">
+
+                    const products = [
+                        { 
+                            name: 'BLUSINHA GOSTOSA',
+                            description: '93% poliéster / 7% elastano', 
+                            info: [
+                                'Na máquina lave no ciclo permanente em temperatura morna;', 
+                                'Não centrifugar;',
+                                'Use amaciante;',
+                                'Não usar alvejantes à base de cloro;', 
+                                'Secar sempre em varal ao ar livre;',
+                                'Para passar a temperatura ideal é a “média”, porém se deixar ela bem estendida no varal o ferro não será necessário.'
+                            ]
+                        },
+                        { 
+                            name: 'CONJUNTO CHIC KIT',
+                            description: '98% algodão / 2% poliéster', 
+                            info: [
+                                'Na máquina lave no ciclo permanente em temperatura fria ou ambiente;', 
+                                'Use amaciante;',
+                                'Não usar alvejantes à base de cloro;', 
+                                'Secar sempre em varal ao ar livre, preferencialmente à sombra;',
+                                'Passar com ferro em temperatura baixa.'
+                            ]
+                        },
+                        { 
+                            name: 'CALÇA CLÁSSICA MTV MARROM',
+                            description: '100% poliéster', 
+                            info: [
+                                'Na máquina lave no ciclo permanente em temperatura fria ou ambiente;', 
+                                'Não centrifugar;',
+                                'Use amaciante;',
+                                'Não usar alvejantes à base de cloro;', 
+                                'Lavar do lado avesso;',
+                                'Secar sempre em varal ao ar livre para evitar encolhimento;',
+                                'Passar com ferro em temperatura média do lado avesso da peça.'
+                            ]
+                        }, 
+                        { 
+                            name: 'CALÇA CLÁSSICA MTV XADREZ',
+                            description: '100% algodão', 
+                            info: [
+                                'Na máquina lave no ciclo permanente em temperatura fria ou ambiente;', 
+                                'Use amaciante;',
+                                'Não usar alvejantes à base de cloro;', 
+                                'Secar sempre em varal ao ar livre, preferencialmente à sombra;',
+                                'Passar com ferro em temperatura baixa.'
+                            ]
+                        }, 
+                        { 
+                            name: 'CALÇA MASCOTE',
+                            description: '100% viscose', 
+                            info: [
+                                'Recomendado lavar à mão, porém se a máquina for indispensável selecionar o ciclo delicado com baixa velocidade de centrifufação em temperatura fria;', 
+                                'Use sabão neutro;',
+                                'Lave do lado avesso e, se possível em saquinho ideal para máquina;', 
+                                'Passe sempre do lado avesso e use um pano branco entre a peça e o ferro;',
+                                'Secar ao ar livre, preferencialmente à sombra;', 
+                                'Obs: É importante lavar a calça na máquina com no máximo meio tanque.'
+                            ]
+                        }, 
+                        { 
+                            name: 'CAMISA PEROLA',
+                            description: '100% linho', 
+                            info: [
+                                'Na máquina selecione o ciclo delicado em temperatura fria ou ambiente;', 
+                                'Use sabão neutro;',
+                                'Secar à sombra e ao ar livre;', 
+                                'Para passar, vire a camisa do avesso e umideça ela com o ferro em temperatura média;',
+                                'Obs: A água fria e a sombra são importantes para evitor o encolhimento do linho.'
+                            ]
+                        }, 
+                        { 
+                            name: 'CROPPED DO DIA',
+                            description: 'Malha penteada / 100% algodão', 
+                            info: [
+                                'Na máquina selecione o ciclo permanente em temperatura fria ou ambiente;', 
+                                'Utilize amaciante;',
+                                'Não utilizar alvejante à base de cloro;', 
+                                'Secar ao ar livre, preferencialmente à sombra;', 
+                                'Passar com ferro em temperatura baixa.'
+                            ]
+                        }, 
+                        { 
+                            name: 'TOP BASIQUINHA',
+                            description: '98% algodão / 2% poliéster', 
+                            info: [
+                                'Na máquina selecione o ciclo permanente em temperatura fria ou ambiente;', 
+                                'Utilize amaciante;',
+                                'Não utilizar alvejante à base de cloro;', 
+                                'Secar ao ar livre, preferencialmente à sombra;', 
+                                'Passar com ferro em temperatura baixa.'
+                            ]
+                        }, 
+                    ]
+
+                    const content = document.getElementById('content') 
+
+                    products.forEach( (item, index) => { 
+
+                        const p = `<div class="row my-2">
+                                    <div class="col-12 item-title" onclick="onClickCard(${index})">
+                                        <span>${item.name}</span>
+                                        <img src='assets/svg/chevron.svg' width='20px' id='chevron_${index}'>
+                                    </div>
+                                    <div class="col-12 item-content" id='content_${index}'>
+                                        <p> ${item.description}</p>
+                                        <ol>
+                                            ${ item.info.map( (i) => {
+                                                return `<li>${i}</li>`
+                                            }).join('')}
+                                        </ol>
+                                    </div>
+                                </div>`
+                        
+                        content.innerHTML += p
+                    })
+                </script>
+                
+            </div>
+
+        </main>
+        <footer>
+            &copy; 2021 - Todos os direitos reservados pontotab <br>
+            Desenvolvido por <a href='https://vitorbigelli.com'>Vitor Bigelli</a>            
+        </footer>
+    </body>
+</html>
+
+<script type="text/javascript">
+
+    let current = null 
+
+
+    function flipChevron(number) { 
+
+        const id = 'chevron_' + number 
+        
+        let chevron = document.getElementById(id)
+        
+
+        if (chevron.style.transform !== 'rotate(180deg)') {
+            chevron.style.transform = 'rotate(180deg)'
+        } else { 
+            chevron.style.transform = 'rotate(0deg)'
+        }
+
+    }
+
+    function toggleContent(number) {
+        const id = 'content_' + number 
+        
+        let card = document.getElementById(id) 
+        
+        if (card.style.maxHeight !== '1000px') { 
+            card.style.maxHeight = '1000px'
+        } else { 
+            card.style.maxHeight = 0
+        }
+    }
+
+    function onClickCard(number) { 
+
+        if (current === null) { 
+            toggleContent(number)
+            flipChevron(number)
+            current = number
+        } else if (current !== number) { 
+            toggleContent(current)
+            flipChevron(current)   
+            toggleContent(number)
+            flipChevron(number)   
+            current = number   
+        } else {       
+            toggleContent(number)
+            flipChevron(number)
+            current = null
+        }
+
+    }
+
+</script>

@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+:root {
+    --rosa: #FF66C4;
+    --rosa_escuro: #AA0F77;
+    --bege: #F8E2C1;
+    --marrom: #89532D;
+}
+
+body {
+    background-color: var(--rosa);
+    height: 100%;
+    font-family: "Open sans", sans-serif;
+}
+
+header {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+main {
+    min-height: calc(100% - 300px); 
+    padding: 30px;
+    overflow-y: auto;
+}
+
+a {
+    color: var(--rosa);
+}
+
+footer {
+    height: 100px;
+    background-color: var(--rosa_escuro);
+    font-size: 12px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-title {
+    background-color: var(--rosa_escuro);
+    padding: 10px 20px;
+    text-align: left;
+    color: var(--bege);    
+    font-weight: bold;
+    display: flex; 
+    font-size: 14px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-content  {
+    background-color: var(--bege);   
+    max-height: 0;
+    overflow: hidden;
+}
+
+.item-content p {
+    font-style: italic;
+    text-align: left;
+    font-size: 12px;
+    margin: 10px 0;
+    color: var(--marrom);
+}
+
+.item-content ol {
+    text-align: left;
+    color: var(--marrom);
+}
+
+h1 {
+    font-family: 'Anton', sans-serif;
+    color: white;
+}
